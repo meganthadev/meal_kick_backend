@@ -12,4 +12,4 @@ Frontend (Javascript) SSH Clone: git@github.com:meganthadev/meal_kick_js.git
 Run rails s to start server and view application in browser
 Rails version - 'rails', '~> 6.0.3'
 
-gem 'rack-cors', for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+Use gem 'rack-cors', for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
