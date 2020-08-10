@@ -1,4 +1,4 @@
-MealKick! README
+MealKick! backend README
 
 Welcome to MealKick! A meal planning app where users can add and share their own recipes for meal planning, as well as comment on other's recipes, in a simple-to-use interface which makes meal planning... a real kick!
 
@@ -10,6 +10,9 @@ Run git remote set-url origin git@github.com:meganthadev/meal_kick_backend.git ,
 
 Frontend (Javascript/HTML/CSS) Clone: git@github.com:meganthadev/meal_kick_js.git
 Run rails s to start server and view application in browser
-Rails version - 'rails', '~> 6.0.3'
 
 Use gem 'rack-cors', for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+
+Rails version - 'rails', '~> 6.0.3'
+
+
