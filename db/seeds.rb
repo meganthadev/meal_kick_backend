@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Category.destroy_all
+Recipe.destroy_all
+
+
 breakfast = Category.create(name: "Breakfast")
 lunch = Category.create(name: "Lunch")
 snacks = Category.create(name: "Snacks")
@@ -19,3 +23,4 @@ Recipe.create(title: "Brioche French Toast", ingredients: "Brioche Bread, Eggs, 
 2. Place a butter in a pan over medium-low heat, soak the bread for about 2 sec then flip it and soak for another 2 sec
 3. Place the soaked bread on the pan, cook for about 2 min, flip and cook for another 2 min, sprinkle with some sugar, then repeat and cook each side for another 2 min, the total cook time should be around 8 to 10 min over medium-low heat
 4.  Serve it with powdered sugar, syrup or some fresh fruits", category_id: breakfast.id)
+
