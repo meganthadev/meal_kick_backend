@@ -22,7 +22,7 @@ class Api::V1::RecipesController < ApplicationController
     private
 
     def recipe_params
-        params.require(:recipe).permit(:title, :ingredients, :instructions, :category_id)
+        params.require(:recipe).permit(:title, :ingredients, :instructions, :category_id, :image_url)
     end 
 
 end
