@@ -22,5 +22,5 @@ Recipe.create(title: "Brioche French Toast", ingredients: "Brioche Bread, Eggs, 
 1. Whisk together the eggs & egg yolk with the sugar, vanilla extract, cream, cinnamon, and a tiny pinch of salt
 2. Place a butter in a pan over medium-low heat, soak the bread for about 2 sec then flip it and soak for another 2 sec
 3. Place the soaked bread on the pan, cook for about 2 min, flip and cook for another 2 min, sprinkle with some sugar, then repeat and cook each side for another 2 min, the total cook time should be around 8 to 10 min over medium-low heat
-4.  Serve it with powdered sugar, syrup or some fresh fruits", image_url: "https://i.imgur.com/ayPz1pm.jpg", category_id: breakfast.id)
+4.  Serve it with powdered sugar, syrup or some fresh fruits", category_id: breakfast.id)
 
