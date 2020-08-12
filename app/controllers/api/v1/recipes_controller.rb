@@ -2,9 +2,9 @@ class Api::V1::RecipesController < ApplicationController
 
     def index 
         recipes = Recipe.all
-        render json: recipes
+        render json: RecipeSerializer.new(recipes)
     end 
-
+ 
     def create 
         recipe = Recipe.new(recipe_params)
         if recipe.save 
