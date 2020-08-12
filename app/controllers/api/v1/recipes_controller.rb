@@ -12,6 +12,11 @@ class Api::V1::RecipesController < ApplicationController
         else  
             render json: {errors: recipe.errors.full_messages}, status: :unproccesible_entity
         end 
+    end
+    
+    def show 
+        recipe = Recipe.find_by(params[:id])
+        render json: RecipeSerializer(recipes)
     end 
 
     private
