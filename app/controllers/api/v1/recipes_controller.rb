@@ -6,9 +6,9 @@ class Api::V1::RecipesController < ApplicationController
     end 
  
     def create 
-        recipe = Recipe.new(recipe_params)
+        recipe = Recipe.create(recipe_params)
         if recipe.save 
-            render json: recipe, status: :accepted
+            render json: RecipeSerializer.new(recipe), status: :accepted
         else  
             render json: {errors: recipe.errors.full_messages}, status: :unproccesible_entity
         end 
@@ -22,7 +22,7 @@ class Api::V1::RecipesController < ApplicationController
     private
 
     def recipe_params
-        params.require(recipe).permit(:title, :ingredients, :instructions, :category_id)
+        params.require(:recipe).permit(:title, :ingredients, :instructions, :category_id)
     end 
 
 end
